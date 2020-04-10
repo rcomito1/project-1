@@ -1,6 +1,6 @@
 // jshint esversion: 6
 
-//req. 3b
+//requirement 3b
 let arrAvg = (arr) => {
   let sum = 0;
   for (var i = 0; i < arr.length; i++) {
