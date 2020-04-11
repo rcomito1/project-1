@@ -22,3 +22,15 @@ let arrMax = (arr) => {
   })
   return results
 };
+
+//req. 3d
+let sumEvens = (arr) => {
+  let sum = 0;
+
+for (let i of arr) {
+  if(i%2===0){
+    sum = sum + i;
+  }
+}
+  return sum;
+}
