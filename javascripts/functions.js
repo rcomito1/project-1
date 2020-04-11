@@ -1,6 +1,6 @@
 // jshint esversion: 6
 
-//requirement 3b
+//req. 3b
 let arrAvg = (arr) => {
   let sum = 0;
   for (var i = 0; i < arr.length; i++) {
@@ -11,19 +11,14 @@ let arrAvg = (arr) => {
 
 //req. 3c
 
-let arrMax = (arr) _> {
-  //
-};
-//==============================
-let fruits = ["apple", "orange", "plum"]
-let result = "";
-let maxSoFar = fruits[0].length;
-//iterate over array ay
-fruits.forEach((elem) => {
-  if(elem.length > maxSoFar){
-    maxSoFar = elem.length;
-  }
-});
+let arrMax = (arr) => {
+  let results = "" ;
+  let max = 0;
 
-console.log(maxSoFar);
-//===============================
+  arr.forEach(function(elem) {
+    if (max < elem)
+      max = elem;
+      results = `${max}`;
+  })
+  return results
+};
